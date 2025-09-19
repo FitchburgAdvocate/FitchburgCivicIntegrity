@@ -1,3 +1,47 @@
+
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "1",
+      "description": "An overhead shot of a city map with zoning areas highlighted.",
+      "imageUrl": "https://picsum.photos/seed/citymap1/800/600",
+      "imageHint": "city map"
+    },
+    {
+      "id": "2",
+      "description": "A clean stream flowing through a lush green forest.",
+      "imageUrl": "https://picsum.photos/seed/waterstream2/800/600",
+      "imageHint": "water stream"
+    },
+    {
+      "id": "3",
+      "description": "A person looking out over a city skyline at sunset.",
+      "imageUrl": "https://picsum.photos/seed/civicview3/800/600",
+      "imageHint": "city view"
+    },
+    {
+      "id": "4",
+      "description": "A gavel resting on a law book.",
+      "imageUrl": "https://picsum.photos/seed/legalgavel4/800/600",
+      "imageHint": "legal law"
+    },
+    {
+      "id": "5",
+      "description": "A person speaking into a megaphone.",
+      "imageUrl": "https://picsum.photos/seed/alertmega5/800/600",
+      "imageHint": "alert megaphone"
+    },
+    {
+      "id": "6",
+      "description": "A library archive with rows of files.",
+      "imageUrl": "https://picsum.photos/seed/archivefiles6/800/600",
+      "imageHint": "archive files"
+    },
+    {
+      "id": "7",
+      "description": "Portrait of a confident man in a suit.",
+      "imageUrl": "https://picsum.photos/seed/manportrait7/400/400",
+      "imageHint": "man portrait"
+    }
+  ]
 }
