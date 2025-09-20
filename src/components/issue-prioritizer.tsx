@@ -1,14 +1,14 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState, useEffect } from 'react';
+import { useFormStatus } from 'react-dom';
 import { handlePrioritize } from '@/app/actions';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { Loader2, CheckCircle, XCircle, AlertTriangle, Info } from 'lucide-react';
+import { Loader2, CheckCircle, Info, AlertTriangle } from 'lucide-react';
 import { Alert, AlertTitle, AlertDescription } from './ui/alert';
-import { useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
 
 const initialState = {
@@ -33,7 +33,7 @@ function SubmitButton() {
 }
 
 export function IssuePrioritizer() {
-  const [state, formAction] = useFormState(handlePrioritize, initialState);
+  const [state, formAction] = useActionState(handlePrioritize, initialState);
   const { toast } = useToast();
 
   useEffect(() => {
