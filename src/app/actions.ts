@@ -5,8 +5,19 @@ import {
   PrioritizeWaterQualityIssuesOutput,
 } from '@/ai/flows/prioritize-water-quality-issues';
 import { z } from 'zod';
-import fs from 'fs/promises';
-import path from 'path';
+import { getFirestore } from 'firebase-admin/firestore';
+import { initializeApp, getApps, App } from 'firebase-admin/app';
+
+// Initialize Firebase Admin SDK
+let adminApp: App;
+if (!getApps().length) {
+  adminApp = initializeApp();
+} else {
+  adminApp = getApps()[0];
+}
+
+const db = getFirestore(adminApp);
+
 
 const PrioritizeSchema = z.object({
   documentText: z.string().min(50, 'Document text must be at least 50 characters long.'),
@@ -79,23 +90,21 @@ export async function handleSignup(
   }
   
   const { email, message } = validatedFields.data;
-  const submissionTime = new Date();
-  const fileName = `submission_${submissionTime.getTime()}.txt`;
-  const submissionsDir = path.join(process.cwd(), 'src', 'submissions');
-  const filePath = path.join(submissionsDir, fileName);
-
-  const content = `Date: ${submissionTime.toISOString()}\nEmail: ${email}\nMessage: ${message || 'No message provided.'}\n`;
-
+  
   try {
-    await fs.mkdir(submissionsDir, { recursive: true });
-    await fs.writeFile(filePath, content);
+    const submissionTime = new Date();
+    await db.collection('submissions').add({
+      email,
+      message: message || 'No message provided.',
+      submittedAt: submissionTime,
+    });
     
     return {
       status: 'success',
       message: 'Thank you for signing up! Your information has been received.',
     };
   } catch (error) {
-    console.error('Failed to save submission:', error);
+    console.error('Failed to save submission to Firestore:', error);
     return {
       status: 'error',
       message: 'An unexpected error occurred. Please try again later.',
