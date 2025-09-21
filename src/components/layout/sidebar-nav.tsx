@@ -34,7 +34,7 @@ import { Button } from '@/components/ui/button';
 const links = [
   { href: '/dashboard', label: 'Dashboard', icon: Home },
   { href: '/spotlight', label: 'In the Spotlight', icon: Eye },
-  { href: '/did-what', label: 'They Did What!?!', icon: Angry },
+  { href: '/did-what', label: 'Fitchburg Officials Did What?!?', icon: Angry },
   { href: '/prioritize', label: 'AI Prioritizer', icon: Sparkles },
   { href: '/blog', label: 'Community Blog', icon: Book },
   { href: '/documents', label: 'Document Archive', icon: FileText },

@@ -6,7 +6,7 @@ export default function DidWhatPage() {
     <div className="max-w-4xl mx-auto">
       <header className="space-y-2 mb-12">
         <h1 className="text-4xl font-bold tracking-tighter font-headline">
-          They Did What!?!
+          Fitchburg Officials Did What?!?
         </h1>
         <p className="text-lg text-muted-foreground">
           Exposing and examining questionable decisions and actions by city

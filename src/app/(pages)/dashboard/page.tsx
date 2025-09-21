@@ -132,7 +132,7 @@ export default function DashboardPage() {
           </Card>
         </section>
         <section className="space-y-4">
-          <SectionHeader title="They Did What!?!" href="/did-what" />
+          <SectionHeader title="Fitchburg Officials Did What?!?" href="/did-what" />
            <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2 font-headline">
