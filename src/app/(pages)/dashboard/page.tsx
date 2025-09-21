@@ -6,6 +6,8 @@ import {
   FileText,
   Gavel,
   Megaphone,
+  Eye,
+  Angry,
 } from 'lucide-react';
 import {
   actionAlerts,
@@ -108,6 +110,42 @@ export default function DashboardPage() {
           Welcome to the Fitchburg Civic Integrity hub. Here’s the latest.
         </p>
       </header>
+
+      <div className="grid gap-8 lg:grid-cols-2">
+        <section className="space-y-4">
+          <SectionHeader title="In the Spotlight" href="/spotlight" />
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 font-headline">
+                <Eye className="h-6 w-6" />
+                Featured Issue
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground">
+                This section highlights the most pressing civic and
+                environmental issues currently impacting Fitchburg.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+        <section className="space-y-4">
+          <SectionHeader title="They Did What!?!" href="/did-what" />
+           <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 font-headline">
+                <Angry className="h-6 w-6" />
+                Questionable Actions
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground">
+               Exposing and examining questionable decisions and actions by city officials that demand public scrutiny.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+      </div>
 
       <section className="space-y-6">
         <SectionHeader title="Recent Blog Posts" href="/blog" />
