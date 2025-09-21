@@ -15,6 +15,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import type { Document } from '@/lib/types';
+import Link from 'next/link';
 
 export default function DocumentsPage() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -74,10 +75,10 @@ export default function DocumentsPage() {
                   </TableCell>
                   <TableCell className="text-right">
                     <Button variant="ghost" size="icon" asChild>
-                      <a href={doc.url} download>
+                      <Link href={doc.url} target="_blank" download>
                         <Download className="h-4 w-4" />
                         <span className="sr-only">Download</span>
-                      </a>
+                      </Link>
                     </Button>
                   </TableCell>
                 </TableRow>

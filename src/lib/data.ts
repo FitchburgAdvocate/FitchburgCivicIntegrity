@@ -41,12 +41,12 @@ export const blogPosts: BlogPost[] = [
 ];
 
 export const documents: Document[] = [
-    { id: 'doc-1', title: 'City Council Meeting Agenda - July 2024', date: '2024-07-01', category: 'Agenda', url: '#' },
-    { id: 'doc-2', title: 'Planning Board Meeting Minutes - June 2024', date: '2024-06-20', category: 'Minutes', url: '#' },
-    { id: 'doc-3', title: 'Proposed Zoning Ordinance 2024-05', date: '2024-05-15', category: 'Ordinance', url: '#' },
-    { id: 'doc-4', title: 'Environmental Impact Report: Quabbin Development', date: '2024-04-30', category: 'Report', url: '#' },
-    { id: 'doc-5', title: 'City Budget Fiscal Year 2025', date: '2024-04-01', category: 'Budget', url: '#' },
-    { id: 'doc-6', title: 'Conservation Commission Public Hearing Notice', date: '2024-07-10', category: 'Notice', url: '#' },
+    { id: 'doc-1', title: 'City Council Meeting Agenda - July 2024', date: '2024-07-01', category: 'Agenda', url: '/documents/placeholder.pdf' },
+    { id: 'doc-2', title: 'Planning Board Meeting Minutes - June 2024', date: '2024-06-20', category: 'Minutes', url: '/documents/placeholder.pdf' },
+    { id: 'doc-3', title: 'Proposed Zoning Ordinance 2024-05', date: '2024-05-15', category: 'Ordinance', url: '/documents/placeholder.pdf' },
+    { id: 'doc-4', title: 'Environmental Impact Report: Quabbin Development', date: '2024-04-30', category: 'Report', url: '/documents/placeholder.pdf' },
+    { id: 'doc-5', title: 'City Budget Fiscal Year 2025', date: '2024-04-01', category: 'Budget', url: '/documents/placeholder.pdf' },
+    { id: 'doc-6', title: 'Conservation Commission Public Hearing Notice', date: '2024-07-10', category: 'Notice', url: '/documents/placeholder.pdf' },
 ];
 
 export const legalActions: LegalAction[] = [
