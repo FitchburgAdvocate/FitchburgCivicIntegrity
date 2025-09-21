@@ -8,6 +8,8 @@ import {
   Megaphone,
   Eye,
   Angry,
+  Landmark,
+  Leaf,
 } from 'lucide-react';
 import {
   actionAlerts,
@@ -215,6 +217,41 @@ export default function DashboardPage() {
                   </div>
                 ))}
               </div>
+            </CardContent>
+          </Card>
+        </section>
+      </div>
+
+      <div className="grid gap-8 lg:grid-cols-2">
+        <section className="space-y-4">
+          <SectionHeader title="Fitchburg Land Use Actions" href="/land-use" />
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 font-headline">
+                <Landmark className="h-6 w-6" />
+                Land Use Actions
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground">
+                Official records and analysis of land-use and development acts in Fitchburg.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+        <section className="space-y-4">
+          <SectionHeader title="Our Natural Resources" href="/natural-resources" />
+           <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 font-headline">
+                <Leaf className="h-6 w-6" />
+                Natural Resources
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground">
+               Commentary on city actions affecting Fitchburg's natural resources.
+              </p>
             </CardContent>
           </Card>
         </section>

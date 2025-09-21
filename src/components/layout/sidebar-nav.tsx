@@ -12,6 +12,8 @@ import {
   Sparkles,
   Eye,
   Angry,
+  Landmark,
+  Leaf,
 } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
@@ -37,6 +39,8 @@ const links = [
   { href: '/documents', label: 'Document Archive', icon: FileText },
   { href: '/legal', label: 'Legal Actions', icon: Gavel },
   { href: '/alerts', label: 'Action Alerts', icon: Megaphone },
+  { href: '/land-use', label: 'Land Use', icon: Landmark },
+  { href: '/natural-resources', label: 'Natural Resources', icon: Leaf },
   { href: '/about', label: 'About', icon: Info },
 ];
 
