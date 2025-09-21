@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Mail } from 'lucide-react';
 
 export default function AboutPage() {
   const founderImage = PlaceHolderImages.find((img) => img.id === '7');
@@ -39,6 +40,22 @@ export default function AboutPage() {
                 mobilization, we strive to hold public officials accountable and
                 safeguard our environment for future generations.
               </p>
+            </CardContent>
+          </Card>
+           <Card>
+            <CardHeader>
+              <CardTitle className="font-headline">Contact Us</CardTitle>
+            </CardHeader>
+            <CardContent className="prose max-w-none text-card-foreground">
+                <p>
+                    If you have questions, comments, or information to share, you are invited to contact David M. Haight directly.
+                </p>
+                <div className="flex items-center gap-2 mt-4">
+                    <Mail className="h-5 w-5" />
+                    <a href="mailto:david.haight@fitchburgnaturalresourceswatch.org" className="text-primary hover:underline">
+                        david.haight@fitchburgnaturalresourceswatch.org
+                    </a>
+                </div>
             </CardContent>
           </Card>
         </div>

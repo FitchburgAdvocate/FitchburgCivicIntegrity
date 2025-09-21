@@ -14,6 +14,7 @@ import {
   Angry,
   Landmark,
   Leaf,
+  Mail,
 } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
@@ -41,6 +42,7 @@ const links = [
   { href: '/alerts', label: 'Action Alerts', icon: Megaphone },
   { href: '/land-use', label: 'Land Use', icon: Landmark },
   { href: '/natural-resources', label: 'Natural Resources', icon: Leaf },
+  { href: '/signup', label: 'Sign Up', icon: Mail },
   { href: '/about', label: 'About', icon: Info },
 ];
 
