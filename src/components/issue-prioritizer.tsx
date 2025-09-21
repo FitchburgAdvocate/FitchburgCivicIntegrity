@@ -70,7 +70,7 @@ export function IssuePrioritizer() {
       </form>
 
       {state.status === 'success' && state.data && (
-        <Card className="animate-fade-in">
+        <Card className="fade-in">
           <CardHeader>
             <CardTitle className="font-headline flex items-center gap-2">
               {state.data.isRelevant ? (

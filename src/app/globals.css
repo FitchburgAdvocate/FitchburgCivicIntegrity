@@ -4,24 +4,24 @@
 
 @layer base {
   :root {
-    --background: 231 60% 95%;
-    --foreground: 202 44% 15%;
-    --card: 231 60% 100%;
-    --card-foreground: 202 44% 15%;
-    --popover: 231 60% 100%;
-    --popover-foreground: 202 44% 15%;
-    --primary: 201 100% 30%;
+    --background: 228 55% 95%; /* Light Blue (#E8EAF6) */
+    --foreground: 215 28% 27%;
+    --card: 228 55% 100%;
+    --card-foreground: 215 28% 27%;
+    --popover: 228 55% 100%;
+    --popover-foreground: 215 28% 27%;
+    --primary: 201 100% 30%; /* Blue (#00679B) */
     --primary-foreground: 210 40% 98%;
-    --secondary: 231 30% 91%;
+    --secondary: 228 30% 92%;
     --secondary-foreground: 201 100% 30%;
-    --muted: 231 30% 91%;
-    --muted-foreground: 231 20% 61%;
-    --accent: 106 58% 26%;
+    --muted: 228 30% 92%;
+    --muted-foreground: 228 15% 65%;
+    --accent: 106 58% 26%; /* Green (#316A1C) */
     --accent-foreground: 106 60% 95%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 231 20% 85%;
-    --input: 231 20% 88%;
+    --border: 228 20% 88%;
+    --input: 228 20% 90%;
     --ring: 201 100% 30%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
@@ -83,5 +83,15 @@
     @apply bg-background text-foreground;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 }
